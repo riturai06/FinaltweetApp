@@ -1,0 +1,68 @@
+.card{
+    align-self: center;
+    margin-bottom: 20px;
+    background-color: rgb(235, 217, 245);
+}
+.tweetDesc{
+    align-self: center;
+    padding: 40px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: justify;
+    margin-top: 10px;
+    margin-left: 300px;
+    text-emphasis: initial;
+}
+
+.tweetDesc:hover{
+
+   box-shadow: 0px 37px 20px -20px rgba(212, 125, 247, 0.767);
+   border: deepskyblue;
+   
+
+}
+
+.postbtn{
+    width:10%; 
+    height: 30%;
+    padding:10px 10px;
+    background: #4285f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+    }
+    
+    .postbtn:hover{
+        box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+        transform: translate(0px, -4px) scale(1.2);
+      }
+
+.btn{
+    margin-left: 300px;
+}
+
+.card-body{
+    margin-top: 10px;
+    background-color: rgba(226, 223, 240, 0.781);
+    padding: 40px;
+}
+
+.fs-black{
+    color: rgb(181, 117, 255) !important;
+    margin-left: 20px;
+}
+
+.cards{
+    background-color: rgba(246, 244, 255, 0.781);
+    padding: 10px;
+    margin-top: 10px;
+}
+.from-group{
+    margin-left: 100px;
+}    
+.fs-red{
+    color: rgb(248, 24, 72) !important;
+}
+

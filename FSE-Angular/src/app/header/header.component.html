@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-md navbar-light  ">
+  <div class="container-fluid">
+    <img src="assets/tweeticon.jpg" class="img"  width="50" height="60"><a routerLink="/userdetails" class="navbar-brand title ">Twitter.in</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <span class="navbar-toggler-icon"></span>
+    </button>&nbsp;&nbsp;
+
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      
+      <ul class="navbar-nav ml-auto">
+        
+          
+          <li *ngIf="isLoggedIn == true" class = "text">Welcome,{{email}}</li>
+  <li>
+      <!-- <div  *ngIf="isLoggedIn == true ">
+        <table>
+       <tr>  
+        <input type="search"  formControlName="search" 
+        [(ngModel)]="email" class="form-control" placeholder="Search User"/>
+       <td><button  routerLink="/userdetails" class="button btn-primary" (click)="searchByEmail(email)">
+        <mat-icon>search</mat-icon>
+      </button></td> 
+    </tr>
+  </table>
+    </div> -->
+ 
+    </li>
+    <li>
+            <div class="dropdown" *ngIf="isLoggedIn == true">
+              <button class="dropbtn" *ngIf="isLoggedIn == true">Account Details</button>
+              <div class="dropdown-content">
+                <a class="nav-link" routerLink="/homepage">Post Tweets</a>
+                <a class="nav-link" routerLink="/myTweet">View My Tweets</a>
+                <a class="nav-link" routerLink="/allUsers">View All Users</a>
+                <a class="nav-link" routerLink="/reset">Reset Password</a>
+                <a class="nav-link" routerLink="/logout">Logout</a>
+              </div>
+            </div>
+          </li>
+  
+        <li class="nav-item">
+          <a routerLink="/login" routerLinkActive="active" class="btn btn-primary loginbtn"
+            *ngIf="isLoggedIn == false">Sign Up/Login</a>
+        </li>
+
+        <li *ngIf="isLoggedIn == true" class="nav-item">
+
+          
+        </li>&nbsp;
+
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+
+<router-outlet></router-outlet>

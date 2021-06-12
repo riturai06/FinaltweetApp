@@ -1,0 +1,25 @@
+<div class="container">
+  <div class ="card">
+    <div class ="card-body">
+<div class="col-lg-12 p-2 pb-5" *ngFor="let f of tweet">
+<div><div class="row">
+      
+    <img src="assets/user.jfif" class="img"  width="50" height="60">&nbsp;&nbsp;
+    <div class=" card">Posted on<span class="pl-5">{{f.date}}</span></div></div><br>
+    <div class ="card"> {{f.tweetDescription}}  </div><br>
+    
+    <span>Do you want to delete your tweet ?</span>&nbsp;&nbsp;
+    <button class="btn btn-primary" type="submit" value="submit" (click)="delete(f.tweetId)">Delete </button>
+  </div>
+
+  <div *ngFor="let comment of f.replyDTOList;">
+
+      <div class="bg-primary text-light">Commented By {{comment.email}} <span class="pl-5">{{comment.date}}</span>
+      </div>
+      <div> {{comment.replyDesc}} </div>
+
+    </div>
+    </div>
+</div>
+</div>
+</div>

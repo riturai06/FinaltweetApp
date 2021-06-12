@@ -1,0 +1,62 @@
+  
+.jumbotron{
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: #cedeff;
+}
+
+.line{
+
+    width: 545px;
+    transform: translateX(-50px);
+    padding-bottom: 20px;
+    border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.loginbtn{
+width:30%; 
+height: 30%;
+padding:10px 10px;
+background: #4285f4;
+color: #fff;
+border-radius: 5px;
+box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.4);
+cursor: pointer;
+transition: all ease-in-out 400ms;
+}
+
+.loginbtn:hover{
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -4px) scale(1.2);
+  }
+
+.signupdiv{
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.btn{
+    width: 80;
+    height: 40px;
+    font-size: 1.2rem;
+    margin-left:130px;   
+}
+.card{
+    padding: 30px;
+}
+.card-header{
+    background-color: #5b70e4;
+    padding: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.text{
+    
+    margin-left: 4.0rem;
+}
+.textarea{
+    margin-left: 140px;
+    font-weight: bolder;
+}

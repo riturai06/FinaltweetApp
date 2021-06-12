@@ -1,0 +1,48 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <div class="card">
+                    <h5 class="card-header text-white">Login</h5>
+                    <div class="card-body">
+                        <form [formGroup]="loginForm" (ngSubmit)="loginsubmit()">
+                            <div class="form-group">
+                                <label for="username">UserName:</label>
+                                <input type="text" class="form-control" formControlName="username" id="username"
+                                    autocomplete="off">
+                                <div class="error"
+                                    *ngIf="loginForm.controls['username'].hasError('required') && loginForm.controls['username'].touched">
+                                    Username is required</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="pwd">Password:</label>
+                                <input type="password" class="form-control" formControlName="password" id="pwd"
+                                    autocomplete="off">
+                                <div class="error"
+                                    *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched">
+                                    Password is required</div>
+                            </div>
+                            <button class="btn btn-primary loginbtn" [disabled]="loginForm.invalid">Login</button><br><br>
+                            <div *ngIf="invalidLogin" class="error">
+                                <div>Invalid credentials.</div>
+                                </div>
+                                <h5 class= "text">Don't have an account?</h5>
+                                <a routerLink="/signup" routerLinkActive="active" class=" textarea">Sign Up
+                                </a>  
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="jumbotron">
+                <h5 class="card-header">Twitter Welcomes you !!</h5>
+                <div class="card-body">
+      <img src="assets/twitter.jfif"  width="440" height="400">
+      </div>
+      </div>
+      </div>
+
+    </div>
+
+</div>

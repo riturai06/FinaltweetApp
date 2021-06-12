@@ -1,0 +1,8 @@
+.card{
+    padding: 4px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(197, 217, 245));
+}
+.img{
+    width: 90px;
+    height: 90px;
+}
