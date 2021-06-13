@@ -15,8 +15,8 @@
 }
 
 .loginbtn{
-width:30%; 
-height: 30%;
+width:fit-content; 
+height: fit-content;
 padding:10px 10px;
 background: #4285f4;
 color: #fff;
@@ -38,10 +38,10 @@ transition: all ease-in-out 400ms;
 }
 
 .btn{
-    width: 80;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
     font-size: 1.2rem;
-    margin-left:130px;   
+    margin-left:40px;   
 }
 .card{
     padding: 30px;
@@ -54,9 +54,9 @@ transition: all ease-in-out 400ms;
 }
 .text{
     
-    margin-left: 4.0rem;
+    margin-left: 2.3rem;
 }
 .textarea{
-    margin-left: 140px;
+    margin-left: 40px;
     font-weight: bolder;
 }

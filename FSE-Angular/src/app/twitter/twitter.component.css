@@ -2,15 +2,23 @@
     align-self: center;
     margin-bottom: 20px;
     background-color: rgb(235, 217, 245);
+    width: 100%;
 }
+
+.card-body{
+    width: 100%;
+}
+
 .tweetDesc{
     align-self: center;
     padding: 40px;
+    width: max-content;
     border-radius: 10px;
     border-style: solid;
     text-align: justify;
-    margin-top: 10px;
-    margin-left: 300px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
     text-emphasis: initial;
 }
 
@@ -23,12 +31,14 @@
 }
 
 .postbtn{
-    width:10%; 
-    height: 30%;
+    width:max-content; 
+    height: max-content;
     padding:10px 10px;
     background: #4285f4;
-    color: #fff;
+    color: rgb(207, 202, 202);
     border-radius: 5px;
+    margin-left: 30px;
+    margin-bottom: 10px;
     box-shadow: 0px 15px 10px -10px rgba(0,0,0,0.4);
     cursor: pointer;
     transition: all ease-in-out 400ms;
@@ -39,13 +49,11 @@
         transform: translate(0px, -4px) scale(1.2);
       }
 
-.btn{
-    margin-left: 300px;
-}
+
 
 .card-body{
     margin-top: 10px;
-    background-color: rgba(226, 223, 240, 0.781);
+    background-color: rgba(192, 179, 250, 0.781);
     padding: 40px;
 }
 
